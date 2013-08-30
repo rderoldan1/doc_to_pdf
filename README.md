@@ -1,4 +1,7 @@
 # DocToPdf
+[![Gem Version](https://badge.fury.io/rb/doc_to_pdf.png)](http://badge.fury.io/rb/doc_to_pdf)
+[![Code Climate](https://codeclimate.com/github/rderoldan1/doc_to_pdf.png)](https://codeclimate.com/github/rderoldan1/doc_to_pdf)
+[![Code Climate](https://codeclimate.com/github/rderoldan1/doc_to_pdf.png)](https://codeclimate.com/github/rderoldan1/doc_to_pdf)
 
 TODO: Write a gem description
 
