@@ -1,0 +1,3 @@
+module DocToPdf
+  VERSION = "0.0.1"
+end
