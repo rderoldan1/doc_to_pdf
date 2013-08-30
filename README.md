@@ -43,6 +43,20 @@ If you like to change the default name "doc.pdf" call the programm with file par
 
     rake doc:pdf file=myNewName
 
+Output
+While the pdf is made you can see in your terminal prompt the steps
+
+```bash
+% rake doc:pdf file=myNewFile
+Loading pages (1/5)
+Resolving links (2/5)
+Counting pages (3/5)
+Printing pages (5/5)
+Done
+```
+
+The pdf file is saved in your application root
+
 ## Tested with
 
 
