@@ -8,6 +8,12 @@ Add this line to your application's Gemfile:
 
     gem 'doc_to_pdf'
 
+if you like it works only in your dev env, include in your dev group in Gemfile:
+
+    group :development do
+       gem 'doc_to_pdf'
+    end
+
 And then execute:
 
     $ bundle
@@ -18,7 +24,37 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+First create rdoc documetation with rdoc as you actually do:
+
+    #all your app
+    rdoc
+
+    #only app/ folder
+    rake doc:app
+
+The gem include a rake task under `doc` namespace
+
+    rake doc:pdf
+
+If you like to change the default name "doc.pdf" call the programm with file param:
+
+    rake doc:pdf file=myNewName
+
+## Tested with
+
+
+##### OS
+Mac OS - Mountain Lion
+Ubuntu - 12.04
+
+#### Ruby env
+Ruby 1.9.3
+Rails 3.2.13
+
+#### Binaries
+wkhtmltopdf 0.0.9
+
+
 
 ## Contributing
 
