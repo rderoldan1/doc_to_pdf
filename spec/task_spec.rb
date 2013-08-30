@@ -5,6 +5,6 @@ describe 'task ' do
 
   it 'should convert pdf' do
     require 'rake'
-    Rake::Task["doc:pdf"].invoke
+    expect {Rake::Task["doc:pdf"].invoke}.to raise_error
   end
 end

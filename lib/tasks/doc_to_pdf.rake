@@ -14,12 +14,18 @@ end
 private
 
 def create(name)
-  p name
-  p Rails.root
+  path = "#{Rails.root}/doc"
+  files = get_files(path)
+  if files.empty?
+    puts "Documentation not found in doc/ folder, please create it with rake doc:app or rdoc"
+  else
+    `wkhtmltopdf -O Landscape #{files} #{name}.pdf`
+  end
+
 end
 
-def get_files
-
+def get_files(path)
+  Dir["#{path}/**/*.htm*"].join(" ")
 end
 
 def validate_binarie
