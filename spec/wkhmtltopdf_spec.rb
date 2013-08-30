@@ -5,6 +5,6 @@ describe 'wkhmtltopdf' do
 
   it 'should validate wkhtmltopdf requirement' do
    which = `which wkhtmltopdf`
-   $?.success?.should be false || true
+   $?.success?.to_s.class.should be String
   end
 end
