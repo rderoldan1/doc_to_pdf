@@ -63,6 +63,9 @@ Also it offer an option to clean the "_innecessary_" html, only pass the param `
     Counting pages (3/5)
     Printing pages (5/5)
     Done
+    
+_WARNING_: This option change your html files    
+    
 
 ![Imgur](http://i.imgur.com/SOq9nm7.png)
 
