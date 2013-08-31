@@ -54,7 +54,7 @@ If you like to change the default name "doc.pdf" call the programm with file par
 In my case the menu based in the left is more than 4 pages, and the links doesn't work.
 
 
-Also it offer an option to clean the "_innecessary_" html, only pass the param `clean=true (default is false)`
+Also it offer an option to clean the _"innecessary"_ html, only pass the param `clean=true (default is false)`
 
     $ rake doc:pdf clean=true
     clean html, this could take a while.
