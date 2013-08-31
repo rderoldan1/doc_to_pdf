@@ -4,9 +4,9 @@
 [![Coverage Status](https://coveralls.io/repos/rderoldan1/doc_to_pdf/badge.png)](https://coveralls.io/r/rderoldan1/doc_to_pdf)
 [![Build Status](https://travis-ci.org/rderoldan1/doc_to_pdf.png?branch=master)](https://travis-ci.org/rderoldan1/doc_to_pdf)
 
-TODO: Write a gem description
+GEM to export rdoc in a pdf file using [wkhtmltopdf libary](http://code.google.com/p/wkhtmltopdf/)
 
-## Installation
+## Instalation
 
 Add this line to your application's Gemfile:
 
@@ -42,21 +42,47 @@ The gem include a rake task under `doc` namespace
 
 If you like to change the default name "doc.pdf" call the programm with file param:
 
-    rake doc:pdf file=myNewName
+    $ rake doc:pdf file=myNewFile
+    Loading pages (1/5)
+    Resolving links (2/5)
+    Counting pages (3/5)
+    Printing pages (5/5)
+    Done
 
-Output
-While the pdf is made you can see in your terminal prompt the steps
+[Imgur](http://i.imgur.com/w8agvbY.png)
 
-```bash
-% rake doc:pdf file=myNewFile
-Loading pages (1/5)
-Resolving links (2/5)
-Counting pages (3/5)
-Printing pages (5/5)
-Done
-```
+In my case the menu based in the left is more than 4 pages, and the links doesn't work.
+
+
+Also it offer an option to clean the "_innecessary_" html, only pass the param `clean=true (default is false)`
+
+    $ rake doc:pdf clean=true
+    clean html, this could take a while.
+    Loading pages (1/5)
+    Resolving links (2/5)
+    Counting pages (3/5)
+    Printing pages (5/5)
+    Done
+
+[Imgur](http://i.imgur.com/SOq9nm7.png)
+
+Now it looks cleanner :D
 
 The pdf file is saved in your application root
+
+## Recomendations
+
+* use annotate to comment your models and routes files, [please take a look](https://github.com/ctran/annotate_models)
+* I created a css for prettier in order to cusmotize more like gituh, the file is in (this gist)[https://gist.github.com/rderoldan1/6396578#file-rdoc-css-L1], if
+you like to use it replace the custom css.
+ improvements:
+ - Code highlight
+ - Text formating
+ - Fresh colors
+
+How the css looks?
+
+[Imgur](http://i.imgur.com/bQGrVCa.png)
 
 ## Tested with
 
