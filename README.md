@@ -49,7 +49,7 @@ If you like to change the default name "doc.pdf" call the programm with file par
     Printing pages (5/5)
     Done
 
-[Imgur](http://i.imgur.com/w8agvbY.png)
+![Imgur](http://i.imgur.com/w8agvbY.png)
 
 In my case the menu based in the left is more than 4 pages, and the links doesn't work.
 
@@ -64,7 +64,7 @@ Also it offer an option to clean the "_innecessary_" html, only pass the param `
     Printing pages (5/5)
     Done
 
-[Imgur](http://i.imgur.com/SOq9nm7.png)
+![Imgur](http://i.imgur.com/SOq9nm7.png)
 
 Now it looks cleanner :D
 
@@ -73,7 +73,7 @@ The pdf file is saved in your application root
 ## Recomendations
 
 * use annotate to comment your models and routes files, [please take a look](https://github.com/ctran/annotate_models)
-* I created a css for prettier in order to cusmotize more like gituh, the file is in (this gist)[https://gist.github.com/rderoldan1/6396578#file-rdoc-css-L1], if
+* I created a css for prettier in order to cusmotize more like gituh, the file is in [this gist](https://gist.github.com/rderoldan1/6396578#file-rdoc-css-L1), if
 you like to use it replace the custom css.
  improvements:
  - Code highlight
@@ -82,7 +82,7 @@ you like to use it replace the custom css.
 
 How the css looks?
 
-[Imgur](http://i.imgur.com/bQGrVCa.png)
+![Imgur](http://i.imgur.com/bQGrVCa.png)
 
 ## Tested with
 
