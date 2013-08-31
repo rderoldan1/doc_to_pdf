@@ -6,3 +6,4 @@ gem 'rspec'
 gem 'coveralls', :require => false
 gem 'rails', '3.2.12'
 gem 'colorize'
+gem 'nokogiri'
