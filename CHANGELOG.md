@@ -1,5 +1,7 @@
 
 #### [Current]
+ * [fe4b8e8](../../commit/fe4b8e8) readme updated __(Ruben Espinosa)__
+ * [508405c](../../commit/508405c) changelog __(Ruben Espinosa)__
  * [dd02d98](../../commit/dd02d98) cleaning html, colorized output __(Ruben Espinosa)__
  * [9b1ebf6](../../commit/9b1ebf6) Bump to 0.1.0 __(Ruben Espinosa)__
  * [7aa86ac](../../commit/7aa86ac) test __(Ruben Espinosa)__
