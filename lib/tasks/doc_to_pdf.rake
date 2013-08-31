@@ -47,6 +47,8 @@ def clean_html(path)
   doc.search("#classindex-section").try(:remove)
   doc.search("#project-metadata").try(:remove)
   doc.search("#home-metadata").try(:remove)
-  doc.search("#search-metadata").try(:remove)
+  doc.search("#search-section").try(:remove)
+  doc.search("#home-section").try(:remove)
+
   File.open(path, "w"){|f| f.puts(doc)}
 end
