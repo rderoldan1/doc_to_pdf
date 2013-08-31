@@ -1,5 +1,10 @@
 
 #### [Current]
+ * [3408a4c](../../commit/3408a4c) Bump to 0.1.1 __(Ruben Espinosa)__
+ * [5b05208](../../commit/5b05208) delete serach and header __(Ruben Espinosa)__
+
+#### v0.1.0
+ * [56a9f6a](../../commit/56a9f6a) changelog __(Ruben Espinosa)__
  * [fe4b8e8](../../commit/fe4b8e8) readme updated __(Ruben Espinosa)__
  * [508405c](../../commit/508405c) changelog __(Ruben Espinosa)__
  * [dd02d98](../../commit/dd02d98) cleaning html, colorized output __(Ruben Espinosa)__
