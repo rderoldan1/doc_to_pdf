@@ -91,16 +91,21 @@ How the css looks?
 
 
 ##### OS
-Mac OS - Mountain Lion
-Ubuntu - 12.04
+* Mac OS - Mountain Lion
+
+* Ubuntu - 12.04
 
 #### Ruby env
-Ruby 1.9.3
-Rails 3.2.13
+* Ruby 1.9.3 - 2.0
+
+* Rails 3.2.13
 
 #### Binaries
-wkhtmltopdf 0.0.9
+* wkhtmltopdf 0.0.9
 
+### Requirements GEMS
+* Nokogiri 1.6
+* Colorige
 
 
 ## Contributing
