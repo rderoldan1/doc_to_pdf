@@ -1,5 +1,15 @@
 
 #### [Current]
+ * [fe4b8e8](../../commit/fe4b8e8) readme updated __(Ruben Espinosa)__
+ * [508405c](../../commit/508405c) changelog __(Ruben Espinosa)__
+ * [dd02d98](../../commit/dd02d98) cleaning html, colorized output __(Ruben Espinosa)__
+ * [9b1ebf6](../../commit/9b1ebf6) Bump to 0.1.0 __(Ruben Espinosa)__
+ * [7aa86ac](../../commit/7aa86ac) test __(Ruben Espinosa)__
+ * [f373e04](../../commit/f373e04) test wkhtmltopfd binarie __(Ruben Espinosa)__
+ * [7d7be81](../../commit/7d7be81) fixing test __(Ruben Espinosa)__
+ * [429fc6a](../../commit/429fc6a) travis and coveralls badgets __(Ruben Espinosa)__
+ * [e5b7bea](../../commit/e5b7bea) updated readme __(Ruben Espinosa)__
+ * [6b9c215](../../commit/6b9c215) changelog and updated readme __(Ruben Espinosa)__
  * [db25e78](../../commit/db25e78) readme updated __(Ruben Espinosa)__
 
 #### v0.0.1
