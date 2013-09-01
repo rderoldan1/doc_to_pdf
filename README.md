@@ -3,6 +3,7 @@
 [![Code Climate](https://codeclimate.com/github/rderoldan1/doc_to_pdf.png)](https://codeclimate.com/github/rderoldan1/doc_to_pdf)
 [![Coverage Status](https://coveralls.io/repos/rderoldan1/doc_to_pdf/badge.png)](https://coveralls.io/r/rderoldan1/doc_to_pdf)
 [![Build Status](https://travis-ci.org/rderoldan1/doc_to_pdf.png?branch=master)](https://travis-ci.org/rderoldan1/doc_to_pdf)
+[![Dependency Status](https://gemnasium.com/rderoldan1/doc_to_pdf.png)](https://gemnasium.com/rderoldan1/doc_to_pdf)
 
 GEM to export rdoc in a pdf file using [wkhtmltopdf libary](http://code.google.com/p/wkhtmltopdf/)
 
