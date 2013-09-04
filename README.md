@@ -74,6 +74,17 @@ Now it looks cleanner :D
 
 The pdf file is saved in your application root
 
+
+## PDF Layout
+
+All the pages include the number of the page, the format is page/total i.e  (12/100)
+
+Table of content
+![Imgur](http://i.imgur.com/riQ0xqZ.png)
+
+Class Documentation
+![Imgur](http://i.imgur.com/dwU3TBD.png)
+
 ## Recomendations
 
 * use annotate to comment your models and routes files, [please take a look](https://github.com/ctran/annotate_models)

@@ -26,7 +26,7 @@ def create(name, clean)
   if files.empty?
     puts "Documentation not found in doc/ folder, please create it with rake doc:app or rdoc".orange
   else
-    `wkhtmltopdf -O Landscape #{files.join(" ")} #{name}.pdf`
+    `wkhtmltopdf -t --footer-center [page]/[topage] -O Landscape #{files.join(" ")} #{name}.pdf`
   end
 
 end
@@ -47,6 +47,8 @@ def clean_html(path)
   doc.search("#classindex-section").try(:remove)
   doc.search("#project-metadata").try(:remove)
   doc.search("#home-metadata").try(:remove)
-  doc.search("#search-metadata").try(:remove)
+  doc.search("#search-section").try(:remove)
+  doc.search("#home-section").try(:remove)
+
   File.open(path, "w"){|f| f.puts(doc)}
 end
