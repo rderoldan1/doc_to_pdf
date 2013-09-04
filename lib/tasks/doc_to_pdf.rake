@@ -26,7 +26,7 @@ def create(name, clean)
   if files.empty?
     puts "Documentation not found in doc/ folder, please create it with rake doc:app or rdoc".orange
   else
-    `wkhtmltopdf -O Landscape #{files.join(" ")} #{name}.pdf`
+    `wkhtmltopdf -t --footer-center [page]/[topage] -O Landscape #{files.join(" ")} #{name}.pdf`
   end
 
 end
