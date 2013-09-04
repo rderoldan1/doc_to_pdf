@@ -1,5 +1,12 @@
 
 #### [Current]
+
+
+#### v0.1.3
+ * [f970a4f](../../commit/f970a4f) table of contents support __(Ruben Espinosa)__
+ * [d440443](../../commit/d440443) Bump to 0.1.3 __(Ruben Espinosa)__
+ * [2a6eaca](../../commit/2a6eaca) Bump to 0.1.2 __(Ruben Espinosa)__
+ * [7b6af43](../../commit/7b6af43) changelog __(Ruben Espinosa)__
  * [3408a4c](../../commit/3408a4c) Bump to 0.1.1 __(Ruben Espinosa)__
  * [5b05208](../../commit/5b05208) delete serach and header __(Ruben Espinosa)__
 
