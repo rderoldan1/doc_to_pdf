@@ -72,6 +72,30 @@ _WARNING_: This option change your html files
 
 Now it looks cleanner :D
 
+Now the gem will change the css file by the passing css param.
+The css is more prettier in order to cusmotize more like github:
+ improvements:
+ - Code highlight
+ - Text formating
+ - Fresh colors
+
+    $ rake doc:pdf clean=true css=true
+    Changing default css created, this could take a while.
+    Creating PDF documentation.
+
+![Imgur](http://i.imgur.com/bQGrVCa.png)
+
+Help command
+
+    $ rake doc:pdf help
+    Usage: rake doc:pdf <options>
+        options:
+          --file=yourName: change default pdf output name
+          --clean=true,false: default is false, this delete "unnecessary" hmtl, like menu and search, please be careful, this option modify doc html files
+          --css=tue,false: default false, this change default css for a prettier one
+          --help, show this message
+
+
 The pdf file is saved in your application root
 
 
@@ -88,16 +112,6 @@ Class Documentation
 ## Recomendations
 
 * use annotate to comment your models and routes files, [please take a look](https://github.com/ctran/annotate_models)
-* I created a css for prettier in order to cusmotize more like gituh, the file is in [this gist](https://gist.github.com/rderoldan1/6396578#file-rdoc-css-L1), if
-you like to use it replace the custom css.
- improvements:
- - Code highlight
- - Text formating
- - Fresh colors
-
-How the css looks?
-
-![Imgur](http://i.imgur.com/bQGrVCa.png)
 
 ## Tested with
 
