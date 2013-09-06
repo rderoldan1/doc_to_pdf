@@ -1,6 +1,16 @@
 
 #### [Current]
-
+ * [483dde9](../../commit/483dde9) Downloading css and help command __(Ruben Espinosa)__
+ * [0caad8b](../../commit/0caad8b) Bump to 0.2.0 __(Ruben Espinosa)__
+ * [e862b4d](../../commit/e862b4d) Merge pull request [#2](../../issues/2) from rderoldan1/nokigiri __(Ruben Espinosa)__
+ * [43828b7](../../commit/43828b7) Update README.md __(Ruben Espinosa)__
+ * [8cb608b](../../commit/8cb608b) changelog __(Ruben Espinosa)__
+ * [c1e3178](../../commit/c1e3178) Update README.md __(Ruben Espinosa)__
+ * [ecb1ce5](../../commit/ecb1ce5) Update README.md __(Ruben Espinosa)__
+ * [1fe1251](../../commit/1fe1251) Update README.md __(Ruben Espinosa)__
+ * [38c6928](../../commit/38c6928) Update README.md __(Ruben Espinosa)__
+ * [15f8234](../../commit/15f8234) Update README.md __(Ruben Espinosa)__
+ * [3e4f1da](../../commit/3e4f1da) Merge pull request [#1](../../issues/1) from rderoldan1/nokigiri __(Ruben Espinosa)__
 
 #### v0.1.3
  * [f970a4f](../../commit/f970a4f) table of contents support __(Ruben Espinosa)__
