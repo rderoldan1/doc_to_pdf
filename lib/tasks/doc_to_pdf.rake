@@ -50,9 +50,9 @@ end
 def pretty_css
   puts "Changing default css created, this could take a while.".green
   path = "#{Rails.root}/doc"
-  css = HTTParty.get("https://gist.github.com/rderoldan1/6396578/raw/110f829f59a6e8569ff3a2257187b1f35698be9a/rdoc.css").body
+  css = HTTParty.get("https://gist.github.com/rderoldan1/6396578/raw/rdoc.css").body
   css_file = get_files(path, "css")
-  File.open(css_file.first, 'w'){|f| f.puts(css)}
+  File.open(css_file.first, 'w'){|f| f.write(css)}
 end
 
 def validate_binary
