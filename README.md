@@ -74,10 +74,6 @@ Now it looks cleanner :D
 
 Now the gem will change the css file by the passing css param.
 The css is more prettier in order to cusmotize more like github:
- improvements:
- - Code highlight
- - Text formating
- - Fresh colors
 
     $ rake doc:pdf clean=true css=true
     Changing default css created, this could take a while.

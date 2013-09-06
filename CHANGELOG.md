@@ -1,5 +1,8 @@
 
 #### [Current]
+ * [6b5a763](../../commit/6b5a763) css url __(Ruben Espinosa)__
+ * [02b228e](../../commit/02b228e) readme __(Ruben Espinosa)__
+ * [0272737](../../commit/0272737) changelog __(Ruben Espinosa)__
  * [483dde9](../../commit/483dde9) Downloading css and help command __(Ruben Espinosa)__
  * [0caad8b](../../commit/0caad8b) Bump to 0.2.0 __(Ruben Espinosa)__
  * [e862b4d](../../commit/e862b4d) Merge pull request [#2](../../issues/2) from rderoldan1/nokigiri __(Ruben Espinosa)__
