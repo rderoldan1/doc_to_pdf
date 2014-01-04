@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["rderoldan1@gmail.com"]
   spec.description   = %q{Turn documentation stored in doc folder in your rails app in a pdf file using wkhtmltopdf}
   spec.summary       = %q{Turn documentation in pdf file}
-  spec.homepage      = ""
+  spec.homepage      = "http://rderoldan1.github.io/doc_to_pdf/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
