@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Doc to pdf by rderoldan1</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/rderoldan1/doc_to_pdf">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/rderoldan1/doc_to_pdf/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/rderoldan1/doc_to_pdf/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Doc to pdf</h1>
+          <p>Rails 3 gem to generate pdf output of rdoc documentation </p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/rderoldan1">rderoldan1</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="doctopdf" class="anchor" href="#doctopdf"><span class="octicon octicon-link"></span></a>DocToPdf</h1>
+
+<p><a href="http://badge.fury.io/rb/doc_to_pdf"><img src="https://badge.fury.io/rb/doc_to_pdf.png" alt="Gem Version"></a>
+<a href="https://codeclimate.com/github/rderoldan1/doc_to_pdf"><img src="https://codeclimate.com/github/rderoldan1/doc_to_pdf.png" alt="Code Climate"></a>
+<a href="https://coveralls.io/r/rderoldan1/doc_to_pdf"><img src="https://coveralls.io/repos/rderoldan1/doc_to_pdf/badge.png" alt="Coverage Status"></a>
+<a href="https://travis-ci.org/rderoldan1/doc_to_pdf"><img src="https://travis-ci.org/rderoldan1/doc_to_pdf.png?branch=master" alt="Build Status"></a>
+<a href="https://gemnasium.com/rderoldan1/doc_to_pdf"><img src="https://gemnasium.com/rderoldan1/doc_to_pdf.png" alt="Dependency Status"></a></p>
+
+<p>GEM to export rdoc in a pdf file using <a href="http://code.google.com/p/wkhtmltopdf/">wkhtmltopdf libary</a></p>
+
+<h2>
+<a name="instalation" class="anchor" href="#instalation"><span class="octicon octicon-link"></span></a>Instalation</h2>
+
+<p>Add this line to your application's Gemfile:</p>
+
+<pre><code>gem 'doc_to_pdf'
+</code></pre>
+
+<p>if you like it works only in your dev env, include in your dev group in Gemfile:</p>
+
+<pre><code>group :development do
+   gem 'doc_to_pdf'
+end
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre><code>$ bundle
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre><code>$ gem install doc_to_pdf
+</code></pre>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>First create rdoc documetation with rdoc as you actually do:</p>
+
+<pre><code>#all your app
+rdoc
+
+#only app/ folder
+rake doc:app
+</code></pre>
+
+<p>The gem include a rake task under <code>doc</code> namespace</p>
+
+<pre><code>rake doc:pdf
+</code></pre>
+
+<p>If you like to change the default name "doc.pdf" call the programm with file param:</p>
+
+<pre><code>$ rake doc:pdf file=myNewFile
+Loading pages (1/5)
+Resolving links (2/5)
+Counting pages (3/5)
+Printing pages (5/5)
+Done
+</code></pre>
+
+<p><img src="http://i.imgur.com/w8agvbY.png" alt="Imgur"></p>
+
+<p>In my case the menu based in the left is more than 4 pages, and the links doesn't work.</p>
+
+<p>Also it offer an option to clean the <em>"innecessary"</em> html, only pass the param <code>clean=true (default is false)</code></p>
+
+<pre><code>$ rake doc:pdf clean=true
+clean html, this could take a while.
+Loading pages (1/5)
+Resolving links (2/5)
+Counting pages (3/5)
+Printing pages (5/5)
+Done
+</code></pre>
+
+<p><em>WARNING</em>: This option change your html files    </p>
+
+<p><img src="http://i.imgur.com/SOq9nm7.png" alt="Imgur"></p>
+
+<p>Now it looks cleanner :D</p>
+
+<p>The pdf file is saved in your application root</p>
+
+<h2>
+<a name="pdf-layout" class="anchor" href="#pdf-layout"><span class="octicon octicon-link"></span></a>PDF Layout</h2>
+
+<p>All the pages include the number of the page, the format is page/total i.e  (12/100)</p>
+
+<p>Table of content
+<img src="http://i.imgur.com/riQ0xqZ.png" alt="Imgur"></p>
+
+<p>Class Documentation
+<img src="http://i.imgur.com/dwU3TBD.png" alt="Imgur"></p>
+
+<h2>
+<a name="recomendations" class="anchor" href="#recomendations"><span class="octicon octicon-link"></span></a>Recomendations</h2>
+
+<ul>
+<li>use annotate to comment your models and routes files, <a href="https://github.com/ctran/annotate_models">please take a look</a>
+</li>
+<li>I created a css for prettier in order to cusmotize more like gituh, the file is in <a href="https://gist.github.com/rderoldan1/6396578#file-rdoc-css-L1">this gist</a>, if
+you like to use it replace the custom css.
+improvements:
+
+<ul>
+<li>Code highlight</li>
+<li>Text formating</li>
+<li>Fresh colors</li>
+</ul>
+</li>
+</ul><p>How the css looks?</p>
+
+<p><img src="http://i.imgur.com/bQGrVCa.png" alt="Imgur"></p>
+
+<h2>
+<a name="tested-with" class="anchor" href="#tested-with"><span class="octicon octicon-link"></span></a>Tested with</h2>
+
+<h5>
+<a name="os" class="anchor" href="#os"><span class="octicon octicon-link"></span></a>OS</h5>
+
+<ul>
+<li><p>Mac OS - Mountain Lion</p></li>
+<li><p>Ubuntu - 12.04</p></li>
+</ul><h4>
+<a name="ruby-env" class="anchor" href="#ruby-env"><span class="octicon octicon-link"></span></a>Ruby env</h4>
+
+<ul>
+<li><p>Ruby 1.9.3 - 2.0</p></li>
+<li><p>Rails 3.2.13</p></li>
+</ul><h4>
+<a name="binaries" class="anchor" href="#binaries"><span class="octicon octicon-link"></span></a>Binaries</h4>
+
+<ul>
+<li>wkhtmltopdf 0.0.9</li>
+</ul><h3>
+<a name="requirements-gems" class="anchor" href="#requirements-gems"><span class="octicon octicon-link"></span></a>Requirements GEMS</h3>
+
+<ul>
+<li>Nokogiri 1.6</li>
+<li>Colorige</li>
+</ul><h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
